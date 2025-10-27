@@ -1,6 +1,6 @@
 # KentCS-OperatingSystems-Assignment1
 
-#Description
+# Description
 
 This project demonstrates synchronization between two independent processes (a producer and a consumer) using:
 
@@ -18,7 +18,7 @@ The consumer never reads empty slots.
 
 Both programs respect mutual exclusion when accessing shared memory.
 
-#How to Build/Run
+# How to Build/Run
 
 In a Unix/Linux based terminal, enter the following commands in the directory of the files.
 
