@@ -9,8 +9,8 @@ A shared memory buffer is first made that both proccesses can access, The produc
 
 In a Unix/Linux based terminal, enter the following commands making sure you are in the corerct directory
 
-##gcc producer.c -pthread -lrt -o producer##
-##gcc consumer.c -pthread -lrt -o consumer##
+**gcc producer.c -pthread -lrt -o producer**
+**gcc consumer.c -pthread -lrt -o consumer**
 
 After producing the executables, enter this command to run them together
 
