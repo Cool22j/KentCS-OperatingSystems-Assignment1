@@ -2,30 +2,17 @@
 
 # Description
 
-This project demonstrates synchronization between two independent processes (a producer and a consumer) using:
-
-POSIX shared memory (shm_open)
-
-POSIX semaphores (sem_open)
-
-Threads for concurrency inside each program.
-
-The producer generates items and stores them in a shared table. The consumer retrieves items. Synchronization ensures that:
-
-The table never overflows (max 2 items).
-
-The consumer never reads empty slots.
-
-Both programs respect mutual exclusion when accessing shared memory.
+This program simulates two processes; a producer and a consumer, that share a small table where data items are stored.
+A shared memory buffer is first made that both proccesses can access, The producer then puts items on the table inside that buffer, and the consumer takes them off. The table can only hold two items at a time, so both programs must take turns safely.
 
 # How to Build/Run
 
-In a Unix/Linux based terminal, enter the following commands in the directory of the files.
+In a Unix/Linux based terminal, enter the following commands making sure you are in the corerct directory
 
 gcc producer.c -pthread -lrt -o producer
 gcc consumer.c -pthread -lrt -o consumer
 
-After producing the executables, enter this command to run it
+After producing the executables, enter this command to run them together
 
 ./producer & ./consumer &
 
