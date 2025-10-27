@@ -14,5 +14,5 @@ In a Unix/Linux based terminal, enter the following commands making sure you are
 
 After producing the executables, enter this command to run them together
 
-./producer & ./consumer &
+### **./producer & ./consumer &**
 
